@@ -1,15 +1,5 @@
-import initAxiosIntance from '../apis/axios-instance';
-import httpClient from '../apis/httpClient';
+import { httpClient, initAxiosIntance } from '../apis';
 import { ChartPerDay, InitChartData } from '../types/chart';
-
-// interface
-
-// loader function : exec before component rendering
-
-// input : None
-
-// output
-// 1. chart data for rendering chart
 
 const instance = initAxiosIntance('/data');
 const http = new httpClient(instance);
